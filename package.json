@@ -1,0 +1,16 @@
+{
+  "name": "test-wezom",
+  "version": "1.0.0",
+  "description": "Test task",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass  sass/main.scss css/style.css",
+    "watch:css": "onchange sass/*.scss -- npm run compile:sass"
+  },
+  "author": "Oleg Kovalov",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "onchange": "^7.1.0"
+  }
+}

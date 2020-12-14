@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Wezom test</title>
+	<!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.62/jquery.inputmask.bundle.js"></script>
+  
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  
+  
+</head>
+<body>
+<div class="container">
+
+	<div class="nav-helper"></div>
+
+	<section class="header">
+		<nav class="nav">
+			<ul class="nav__menu">
+				<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Ссылка 2</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Ссылка 3</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Ссылка 4</a></li>
+			</ul>
+			<button class="btn nav__btn popHandle"><img src="img/icons/icon-man.png" alt="icon man">
+				<span>Вход</span>
+			</button>
+		</nav>
+	</section>
+
+	<div class="top">
+		<div class="logo">
+			<img src="img/logo.png" alt="logo">
+    	</div>
+    	<div class="phones">
+    		<span class="phones__phone">+380 98 170 00 740</span>
+    		<span class="phones__phone">+380 98 170 00 740</span>
+    		<button class="btn phones__btn phoneHandle"><img src="img/icons/icon-phone.png" alt="icon man">
+    			<span>Перезвонить мне</span>
+    		</button>
+    	</div>
+    	<div class="features">
+    		<ul class="features__menu">
+    			<li class="features__item">
+    				<a href="#" class="features__link"><img src="img/icons/icon-compare.png" alt="icon compare"><br><span>Сравнение</span></a>
+		        	<span class="compare" id="comInd"></span>
+		        </li>
+		        <li class="features__item">
+		        	<a href="#" class="features__link"><img src="img/icons/icon-favorites.png" alt="icon favorites"><br><span>Избранное</span></a>
+		        	<span class="favorites" id="favInd"></span>
+		        </li>
+		        <li class="features__item">
+		        	<a href="#" class="features__link"><img src="img/icons/icon-cart.png" alt="icon cart"><br><span>Корзина</span></a>
+		        	<span class="cart" id="cartInd"></span>
+		        </li>
+		    </ul>
+   		</div>
+   	</div>
+
+	 <section class="main">
+		<div class="side__header" id="side__header">
+            <div class="burger"><img src="img/icons/burger.png" alt="menu burger"></div>
+            <span>Меню</span>
+        </div>
+        <ul class="side__menu">
+            <li class="side__item"><a class="side__link" href="#"><span>Ссылка 1</span><img src="img/icons/icon-right.png" alt=""></a></li>
+            <li class="side__item"><a class="side__link" href="#">Ссылка 2<img src="img/icons/icon-right.png" alt=""></a></li>
+            <li class="side__item"><a class="side__link" href="#">Ссылка 3<img src="img/icons/icon-right.png" alt=""></a></li>
+            <li class="side__item"><a class="side__link" href="#">Ссылка 4<img src="img/icons/icon-right.png" alt=""></a></li>
+            <li class="side__item"><a class="side__link" href="#">Ссылка 5<img src="img/icons/icon-right.png" alt=""></a></li>
+            <li class="side__item"><a class="side__link" href="#">Ссылка 6<img src="img/icons/icon-right.png" alt=""></a></li>
+            <li class="side__item"><a class="side__link" href="#">Ссылка 7<img src="img/icons/icon-right.png" alt=""></a></li>
+        </ul>
+		<div class="search">
+			<form class="search__form" action="#">
+				<input type="search" placeholder="Поиск по сайту" name="search" minlength="2">
+				<div class="custom-select" >
+				  <select name="search-select">
+				  <option value="0">Все категории</option>
+				  <option value="1">Choice 1</option>
+				  <option value="2">Choice 2</option>
+				  <option value="3">Choice 3</option>
+				  </select>
+				</div>
+				  <button class="btn" type="submit">Поиск</button>
+			</form>
+    	</div>
+			<div class="filter">
+				<div class="filter__header">
+		          <a href="#" class="filter__link"> <img class="filter__link-img" src="img/icons/icon-car.png" />Ссылка 1</a>
+		          <a href="#" class="filter__link"> <img class="filter__link-img" src="img/icons/icon-truck.png" />Ссылка 2</a>
+		          <a href="#" class="filter__link"> <img class="filter__link-img" src="img/icons/icon-rim.png" />Ссылка 3</a>
+		          <a href="#" class="filter__link"> <img class="filter__link-img" src="img/icons/icon-canister.png" />Ссылка 4</a>
+		          <a href="#" class="filter__link"> <img class="filter__link-img" src="img/icons/icon-battery.png" />Ссылка 5</a>
+		        </div>
+		        <form class="filter__content form" id="filterForm">
+		        	<div class="filter__tab">
+						<label class="filter__tab-label">
+						  <input type="radio" checked name="tab">
+						  <span class="filter__tab-check">Tab 1</span>
+						</label>
+						<label class="filter__tab-label">
+						  <input type="radio"  name="tab">
+						  <span class="filter__tab-check"> Tab 2</span>
+						</label>
+				    </div>
+				    <div class="filter__selection">
+				    	<div class="custom-select">
+						  <select name="sel1">
+						    <option value="0">Select1</option>
+						    <option value="1">Option1</option>
+						    <option value="2">Option2</option>
+						  </select>
+						</div>
+						<div class="custom-select">
+						  <select name="sel2">
+						    <option value="0">Select2</option>
+						    <option value="1">Option1</option>
+						    <option value="2">Option2</option>
+						  </select>
+						</div>
+						<div class="custom-select">
+						  <select name="sel3">
+						    <option value="0">Select3</option>
+						    <option value="1">Option1</option>
+						    <option value="2">Option2</option>
+						  </select>
+						</div>
+						<div class="custom-select">
+						  <select name="sel4">
+						    <option value="0">Select4</option>
+						    <option value="1">Option1</option>
+						    <option value="2">Option2</option>
+						  </select>
+						</div>
+						<div class="custom-select">
+						  <select name="sel5">
+						    <option value="0">Select5</option>
+						    <option value="1">Option1</option>
+						    <option value="2">Option2</option>
+						  </select>
+						</div>
+	          			<div class="filter__price">
+	          				<span>Цена</span>
+	          				<label>
+	          					<input class="price" type="number" placeholder="50" name="price-from" min="0">
+	          				</label>
+	          				<label>
+	          					<input class="price" type="number" placeholder="250000" name="price-to" min="0">
+	          				</label>
+	           			</div>
+        			</div>
+			        <div class="filter__action">
+			          <button class="btn filter__btn-clear" id="reset" type="reset">Очистить фильтр</button>
+			          <button class="btn filter__btn-use" type="submit">Применить фильтр</button>
+			        </div>
+			          
+                </form>
+      		</div>
+		</section>
+
+		<section class="cards">
+			<div class="cards__header">
+				<span class="cards__header-title">Карточки товаров</span>
+				<a href="#" class="cards__header-link">Ссылка в каталог <img src="img/icons/arrow-right.png" alt="arrow right"></a>
+			</div>
+			<div class="cards__content">
+				<div class="cards__content-card card">
+					<div class="card__header">
+						<img src="img/icons/mark.png" alt="mark">
+					</div>
+					<div class="card__description">
+						<a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, optio.</a>
+					</div>
+					<div class="card__rating">
+						<div>
+							<img src="img/icons/star-yellow.png" alt="star">
+							<img src="img/icons/star-yellow.png" alt="star">
+							<img src="img/icons/star-yellow.png" alt="star">
+							<img src="img/icons/star-yellow.png" alt="star">
+							<img src="img/icons/star-yellow.png" alt="star">
+							<a class="review" href="#">Отзывы(10)</a>
+						</div>
+						<span class="quantity">В наличии: 24шт</span>
+					</div>
+					<div class="card__icons">
+						<div>
+							<img src="img/icons/icon-sun.png" alt="sun">
+							<span>Летняя</span>
+						</div>
+						<div>
+							<img src="img/icons/icon-car-2.png" alt="sun">
+							<span>Легковая</span>
+						</div>
+						<div>
+							<img src="img/icons/icon-label.png" alt="sun">
+							<span>Новая</span>
+						</div>
+					</div>
+					<div class="card__img">
+						<div class="card__img-img1"></div>
+					</div>
+					<div class="card__labels label">
+						<div class="label_new">
+							Новинка
+						</div>
+						<div class="label_hit">
+							Хит
+						</div>
+						<div class="label_discount">
+							Скидка
+						</div>
+					</div>
+					<div class="card__price price">
+						<span class="price_new">599 <span>грн.</span></span>
+						<span class="price_old">1250 грн.</span>
+					</div>
+					<button class="card__buy btn">
+						<img src="img/icons/icon-cart-2.png" alt="shopping cart"> Купить товар
+					</button>
+					<div class="card__footer">
+						<button href="#" class="footer__link-compare card__button"><img src="img/icons/icon-compare-2.png" alt="icon compare">Сравнить товар</button>
+						<button href="#" class="footer__link-favorites card__button"><img src="img/icons/icon-favorites-2.png" alt="icon favorites">В избранное</button>
+					</div>
+				</div>
+				<div class="cards__content-card card">
+					<div class="card__header">
+						<img src="img/icons/mark.png" alt="mark">
+					</div>
+					<div class="card__description">
+						<a href="#">Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Ipsum, dolor?</a>
+					</div>
+					<div class="card__rating">
+						<div>
+							<img src="img/icons/star-yellow.png" alt="star">
+							<img src="img/icons/star-yellow.png" alt="star">
+							<img src="img/icons/star-yellow.png" alt="star">
+							<img src="img/icons/star-gray.png" alt="star">
+							<img src="img/icons/star-gray.png" alt="star">
+							<a class="review" href="#">Отзывы(10)</a>
+						</div>
+						<span class="quantity">В наличии: 24шт</span>
+					</div>
+					<div class="card__icons">
+						<div>
+							<img src="img/icons/icon-sun.png" alt="sun">
+							<span>Летняя</span>
+						</div>
+						
+						<div>
+							<img src="img/icons/icon-label.png" alt="sun">
+							<span>Новая</span>
+						</div>
+					</div>
+					<div class="card__img">
+						<div class="card__img-img2"></div>
+					</div>
+					<div class="card__labels label">
+						<div class="label_new">
+							Новинка
+						</div>
+						<div class="label_hit">
+							Хит
+						</div>
+					</div>
+					<div class="card__price price">
+						<span class="price_new">599 <span>грн.</span></span>
+						<span class="price_old">1 250 грн.</span>
+					</div>
+					<button class="card__buy btn">
+						<img src="img/icons/icon-cart-2.png" alt="shopping cart"> Купить товар
+					</button>
+					<div class="card__footer">
+						<button href="#" class="footer__link-compare card__button"><img src="img/icons/icon-compare-2.png" alt="icon compare">Сравнить товар</button>
+						<button href="#" class="footer__link-favorites card__button"><img src="img/icons/icon-favorites-2.png" alt="icon favorites">В избранное</button>
+					</div>
+				</div>
+				<div class="cards__content-card card">
+					<div class="card__header">
+						<img src="img/icons/mark.png" alt="mark">
+					</div>
+					<div class="card__description">
+						<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, dicta!</a>
+					</div>
+					<div class="card__rating">
+						<div>
+							<img src="img/icons/star-gray.png" alt="star">
+							<img src="img/icons/star-gray.png" alt="star">
+							<img src="img/icons/star-gray.png" alt="star">
+							<img src="img/icons/star-gray.png" alt="star">
+							<img src="img/icons/star-gray.png" alt="star">
+							<a class="review" href="#">Без отзывов</a>
+						</div>
+						<span class="quantity">В наличии: 24шт</span>
+					</div>
+					<div class="card__icons">
+						<div>
+							<img src="img/icons/icon-sun.png" alt="sun">
+							<span>Летняя</span>
+						</div>
+						<div>
+							<img src="img/icons/icon-car-2.png" alt="sun">
+							<span>Легковая</span>
+						</div>
+						<div>
+							<img src="img/icons/icon-label.png" alt="sun">
+							<span>Новая</span>
+						</div>
+					</div>
+					<div class="card__img">
+						<div class="card__img-img3"></div>
+						
+					</div>
+					<div class="card__labels label">
+						<div class="label_new">
+							Новинка
+						</div>
+						
+					</div>
+					<div class="card__price price">
+						<span class="price_new">9 570 <span>грн.</span></span>
+						<span class="price_old">11 250 грн.</span>
+					</div>
+					<button class="card__buy btn">
+						<img src="img/icons/icon-cart-2.png" alt="shopping cart"> Купить товар
+					</button>
+					<div class="card__footer">
+						<button class="footer__link-compare card__button" ><img src="img/icons/icon-compare-2.png" alt="icon compare">Сравнить товар</button>
+						<button href="#" class="footer__link-favorites card__button"><img src="img/icons/icon-favorites-2.png" alt="icon favorites">В избранное</button>
+					</div>
+				</div>
+				<div class="cards__content-card card">
+					<div class="card__header">
+						<img src="img/icons/mark.png" alt="mark">
+					</div>
+					<div class="card__description">
+						<a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, ab.</a>
+					</div>
+					<div class="card__rating">
+						<div>
+							<img src="img/icons/star-yellow.png" alt="star">
+							<img src="img/icons/star-yellow.png" alt="star">
+							<img src="img/icons/star-yellow.png" alt="star">
+							<img src="img/icons/star-yellow.png" alt="star">
+							<img src="img/icons/star-yellow.png" alt="star">
+							<a class="review" href="#">Отзывы(10)</a>
+						</div>
+						<span class="quantity">В наличии: 24шт</span>
+					</div>
+					<div class="card__icons">
+						<div>
+							<img src="img/icons/icon-sun.png" alt="sun">
+							<span>Летняя</span>
+						</div>
+						<div>
+							<img src="img/icons/icon-car-2.png" alt="sun">
+							<span>Легковая</span>
+						</div>
+						
+					</div>
+					<div class="card__img">
+						<div class="card__img-img4"></div>
+					</div>
+					<div class="card__labels label">
+						
+					</div>
+					<div class="card__price price">
+						<span class="price_new">599 <span>грн.</span></span>
+						
+					</div>
+					<button class="card__buy btn">
+						<img src="img/icons/icon-cart-2.png" alt="shopping cart"> Купить товар
+					</button>
+					<div class="card__footer">
+						<button href="#" class="footer__link-compare card__button"><img src="img/icons/icon-compare-2.png" alt="icon compare">Сравнить товар</button>
+						<button href="#" class="footer__link-favorites card__button"><img src="img/icons/icon-favorites-2.png" alt="icon favorites">В избранное</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="block block1">
+				<div class="block__header">Блок 1</div>
+				<div class="block__content">
+					<span class="block__notification1">
+						Будьте в курсе новостей и новинок!
+					</span>
+					<span class="block__notification2">
+						Подписывайтесь на рассылку
+					</span>
+					<form class="block__form" onsubmit="return(validate(this)&&subFun())">
+						<input class="block__email email" id="emailSubscribe" type="email" placeholder="Укажите свой email для подписки" name="mail">
+						<span id="emailErr" class="emailErr" tabindex="-1">Укажите свой Email</span>
+				  <button class="btn block__btn" type="submit" id="subscribe">Подписаться</button>
+					</form>
+				</div>
+			</div>
+			<div class="block block2">
+				<h3 class="block__header">Блок ссылок 1</h3>
+				<div class="block__content">
+					<ul class="block__list list">
+						<li class="block__item list__item"><a class="block__link" href="#">Ссылка 1</a></li>
+						<li class="block__item"><a class="block__link" href="#">Ссылка 2</a></li>
+						<li class="block__item"><a class="block__link" href="#">Ссылка 3</a></li>
+						<li class="block__item"><a class="block__link" href="#">Ссылка 4</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="block block3">
+				<h3 class="block__header">Блок 2</h3>
+				<div class="block__content">
+					<ul class="block__list list">
+						<li class="block__item list__item"><a class="block__link" href="#">Ссылка 1</a></li>
+						<li class="block__item"><a class="block__link" href="#">Ссылка 2</a></li>
+						<li class="block__item"><a class="block__link" href="#">Ссылка 3</a></li>
+						<li class="block__item"><a class="block__link" href="#">Ссылка 4</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="block block4">
+				<h3 class="block__header">Блок ссылок 3</h3>
+				<div class="block__content">
+					<ul class="block__list list">
+						<li class="block__item list__item"><a class="block__link" href="#">Ссылка 1</a></li>
+						<li class="block__item"><a class="block__link" href="#">Ссылка 2</a></li>
+						<li class="block__item"><a class="block__link" href="#">Ссылка 3</a></li>
+						<li class="block__item"><a class="block__link" href="#">Ссылка 4</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer__footer">
+
+
+				<div class="footer__logo">
+					<img src="img/logo-footer.png" alt="logo footer">
+					<span class="copyright">
+						&#169; Copyrith 2017. Тестовое задание Wezom
+					</span>
+				</div>
+				<div class="footer__social social">
+					<a class="social__link" href="#"><img src="img/icons/icon-vk.png" alt="icon vk"></a>
+					<a class="social__link" href="#"><img src="img/icons/icon-fb.png" alt="icon fb"></a>
+					<a class="social__link" href="#"><img src="img/icons/icon-tw.png" alt="icon tw"></a>
+					<a class="social__link" href="#"><img src="img/icons/icon-yt.png" alt="icon yt"></a>
+					
+				</div>
+				<div class="footer__about">
+					<img class="footer__logo" src="img/icons/icon-w.png" alt="logo footer">
+					<div>
+						<span class="footer__note1">
+						Разработка тестового
+						
+					</span><br>
+					<span class="footer__note2">
+						Wezom Agency
+					</span>
+					</div>
+				</div>
+			</div>
+	</footer>
+
+	<div class="footer-helper"></div>
+
+	<div class="popup " id="popupEnter">
+		<div class="close popHandle"></div>
+		<div class="popup__content">
+			<button class="popHandle"></button>
+			<div class="vl"></div>
+			<form class="form__enter" action="#" onsubmit="return(validate(this))">
+				<div class="popup__left">
+					<h4>Вход в личный кабинет</h4>
+					<label for="email">Ваш email</label>
+					<input type="email" name="email" id="email"  class="email" placeholder="mikel_ivanov98@gmail.com" required>
+					<label for="pswd">Пароль</label>
+					<input type="password" id="pswd" name="password" placeholder="********" minlength="4" required>
+					<label for="remember"><input type="checkbox" id="remember" name="remember" checked>
+					Запомнить меня</label>
+					<a href="#">Забыли пароль?</a>
+					<a href="#">Регистрация</a>
+					<input  class="btn" id="enterCabinet" type="submit" value="Войти в личный кабинет">
+				</div>
+
+				<div class="popup__right">
+					<h4>Войти с помощью</h4>
+					<a href="#" class="fb btn">
+						<i class="fa fa-facebook fa-fw"></i>Facebook
+					</a>
+		        	<a href="#" class="twitter btn">
+		        		<i class="fa fa-twitter fa-fw"></i>Twitter
+		        	</a>
+		        	<a href="#" class="google btn">
+		        		<i class="fa fa-google fa-fw"></i>Google
+		        	</a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="popup__phone popup" id="popupPhone">
+		<div class="close phoneHandle"></div>
+		<div class="popup__content">
+		<button class="phoneHandle"></button>
+		<h4>Перезвоните мне</h4>
+		<form class="form__phone" action="#">
+			<div class="popup__left">
+			<label for="phone">Номер телефона</label>
+			<input type="tel" name="phone" id="phone" data-inputmask="'mask': '+38 (099) 999 99 99'" placeholder="+38 (0__) ___ __ __" >
+			<input  class="btn" type="submit" value="Перезвоните мне">
+			</div>
+		</form>
+		</div>
+	</div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

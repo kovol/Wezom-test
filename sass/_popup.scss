@@ -1,0 +1,284 @@
+
+.popup {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left:0;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.8);
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s;
+	.close {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+	}
+	
+	
+
+	&__content {
+		
+		
+		background-color:  #fff;
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%, 0);
+		@media screen and (max-width: 1100px) {
+			display: block;
+			top: 10%;
+			
+		}
+		@media screen and (max-width: 780px) {
+			
+			
+			width: 80%;
+			
+		}
+
+		button	{
+			position: absolute;
+			background: transparent;
+			border: none;
+			height: 2.7rem;
+			width: 2.7rem;
+			top: -3.5rem;
+			right: -3.5rem;
+			z-index: 20;
+
+		}
+
+		&::before{
+			position: absolute;
+			content: "";
+			height: 2.7rem;
+			width: 2.7rem;
+			background: url("../img/icons/cross.png") center no-repeat;
+			top: -3.5rem;
+			right: -3.5rem;
+			z-index: 19;
+		}
+		
+		
+		.vl {
+		position: absolute;
+		left: calc(50% - 1px);
+		top: 50%;
+		transform: translateY(-50%);
+		width: 1px;
+		height: 80%;
+		background: #dbdbdb;
+		@media screen and (max-width: 1100px) {
+			display: none;
+
+		}
+		}
+
+		.form__enter {
+			display: flex;
+			padding: 34px 0;
+			@media screen and (max-width: 1100px) {
+			display: block;
+			
+		}
+			
+			.btn {
+				opacity: 0.85;
+				text-transform: none;
+				font-size: 1.4rem;
+			  	font-weight: 400;
+			  	text-decoration: none;
+			}
+			.btn:hover {
+			  opacity: 1;
+			}
+			.popup {
+				&__left{
+					flex: 50%;
+					padding: 0 43px;
+					@media screen and (max-width: 1100px) {
+			margin-bottom: 3rem;
+			
+		}
+
+					input:not(:only-of-type):not([type=submit]) {
+
+						width: 100%;
+						padding: 9px;
+						margin-bottom: 1.7rem;
+						display: inline-block;
+						font-size: 17px;
+						line-height: 20px;
+						opacity: .85;
+						border: 1px solid #d2d2d2;
+
+					&:focus {
+						outline: none;
+					}
+					}
+					label {
+						display: block;
+						font-size: 1.4rem;
+						font-weight: 400;
+						color: #3b3b3b;
+						margin-bottom: 1.1rem;
+					}
+					input[type=submit] {
+						background-color: #afb9c6;
+						padding: 1.8rem 2.5rem;
+						border: none;
+			  			margin: 2.5rem 0 .3rem 0;
+					}
+					input[type=checkbox] {
+						margin: 1.2rem 0;
+						margin-bottom: 1.5rem;
+					}
+					a {
+						font-size: 1.4rem;
+						font-weight: 400;
+						color: #3d3d3d;
+						margin-right: 1.7rem;
+
+					}
+				}
+
+				
+				&__right {
+					flex: 50%;
+					padding: 0 40px;
+					.btn {
+				text-align: center;
+				
+				width: 100%;
+			  	padding: 1.6rem;
+			  	border: none;
+			  	margin: 1.2rem 0;
+			  	display: inline-block;
+			  	&:first-of-type{
+			  		margin-top: 2.2rem;
+			  	}
+			  	i {
+			  		margin-right: 1.4rem;
+			  		font-size: 1.6rem;
+			  	}
+			  	
+			}
+				}
+			}
+		}
+	}
+	h4 {
+		font-size: 2.4rem;
+		font-weight: 700;
+		color: #3b3b3b;
+		margin-bottom: 2.5rem;
+		letter-spacing: normal;
+	}
+}
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+
+
+
+.popup__phone {
+.popup {
+	&__content{
+
+	padding: 3.5rem;
+		max-width: 38rem;
+
+		.popup__left{
+			text-align: center;
+		}
+
+
+		input:not(:only-of-type):not([type=submit]) {
+
+						width: 100%;
+						padding: 9px;
+						margin-bottom: 1.7rem;
+						display: inline-block;
+						font-size: 17px;
+						line-height: 20px;
+						opacity: .85;
+						border: 1px solid #d2d2d2;
+
+					&:focus {
+						outline: none;
+					}
+					}
+					label {
+						text-align: left;
+						display: block;
+						font-size: 1.4rem;
+						font-weight: 400;
+						color: #3b3b3b;
+						margin-bottom: 1.1rem;
+					}
+					input[type=submit] {
+						background-color: $color-orange;
+						padding: 1.8rem 2.5rem;
+						
+
+						border: none;
+			  			margin: auto;
+					}
+
+	}
+}
+
+}
+
+.popupOpen {
+	opacity: 1;
+		visibility: visible;
+	}
+
+
+
+	.emailErr {
+		opacity: 0;
+  width: 100%;
+  background-color: $color-bright-orange;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 51;
+  bottom: 125%;
+  outline: none;
+ 
+  &::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: $color-bright-orange transparent transparent transparent;
+}
+
+&:focus  {
+		opacity: 1;
+	}
+}
+
+	
